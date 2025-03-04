@@ -1,40 +1,151 @@
-## ABOUT
-A blockchain-based voting system that preserves voter privacy and increases accessibility, while keeping the voting system transparent, secure, and cost-effective. The system implements a voting framework that utilizes ethereum’s blockchain and smart contracts to achieve voter administration and auditable voting records. The implementation was deployed on ethereum’s test network to demonstrate usability, scalability, and efficiency.
+**Blockchain-Based Voting System for Corporate Governance (BBVS-CG)**
 
-Pre requisites:
-1. Node JS
-2. Ganache
-3. Metamask extension in the browser, preferably chrome.
+[(https://opensource.org/licenses/MIT)]
 
-## SET UP INSTRUCTIONS
+  A decentralized voting system leveraging Ethereum blockchain and smart contracts to enhance transparency, security, and accessibility in corporate governance. Designed to prevent fraud, ensure voter privacy, and automate compliance through immutable records and AI-driven analytics.
 
-Open ganache and select quick start ethereum.
+## 📋 Overview
 
-Open your browser and configure metamask. Create a wallet and store your```Secret Recovery Phrase``` in a safe place.
+  BBVS-CG provides a secure, transparent, and efficient platform for corporate voting processes. By utilizing blockchain technology, it ensures that all votes are immutable, verifiable, and resistant to tampering, while maintaining voter privacy through advanced cryptographic techniques.
 
-#### Connecting metamask and ganache
-1. In metamask, go to settings > networks > add network. You can also get to this by clicking the metamask extension pinned on your browser > clicking the profile picture > settings > networks > add network
-2. Give your network any name of choice. 
-3. For New RPC URL go to ganache where you'll copy the RPC server url and paste in Metamask. 
-4. Chain ID for ganache is 1337. 
-5. You can name currency symbol as "ETH" and save. 
+## ✨ Features
 
-#### Importing an account from ganache to metamask
-1. Open ganache and select show keys on any account. The show keys button is the key icon.
-2. Copy the private key and click done.
-3. Open the metamask menu which can be accessed by clicking the profile picture and select import account.
-4. Paste the private key copied from ganache and click import.
+- **Immutable Voting Records**: All votes are stored on the Ethereum blockchain, creating a tamper-proof audit trail
+- **Smart Contract Automation**: Self-executing contracts handle vote tallying and enforce governance rules
+- **AI-Driven Fraud Detection**: Real-time anomaly monitoring ensures election security
+- **User-Friendly GUI**: Intuitive dashboard interfaces for voters, administrators, and regulators
+- **Regulatory Compliance**: Automated reporting aligned with SEC, SEBI, and RBI standards
 
 
-```cd E-Voting_System_Blockchain```
+## 🛠️ Technology Stack
 
-```npm i```
+- **Blockchain**: Ethereum (Solidity, Truffle, Ganache)
+- **Frontend**: React.js, Bootstrap, Web3.js
+- **Backend**: Node.js
+- **Security**: Zero-Knowledge Proofs (ZKPs), Metamask Wallet Integration
+- **AI/ML**: Fraud detection models (Python/TensorFlow)
+- **Storage**: IPFS (InterPlanetary File System)
 
-```truffle compile```
 
-```truffle migrate```or```truffle migrate --reset``` for subsequent runs
+## 📦 Prerequisites
 
-```npm start```
+1. [Node.js](https://nodejs.org/) (v18+)
+2. [Ganache](https://trufflesuite.com/ganache/) (Ethereum test network)
+3. [Metamask](https://metamask.io/) browser extension (Chrome recommended)
 
-The project will open in the browser and metamask will ask you to select an account. Select the account we had imported earlier.
 
+## 🚀 Installation
+
+1. Clone the repository:
+
+```
+git clone https://github.com/raj-pate1/BVS.git
+cd E-Voting_System_Blockchain
+```
+
+
+2. Install dependencies:
+
+```
+npm install
+```
+
+
+3. Compile smart contracts:
+
+```
+truffle compile
+```
+
+
+4. Deploy to local blockchain:
+
+```
+truffle migrate --reset
+```
+
+
+5. Start the application:
+
+```
+npm start
+```
+
+
+## ⚙️ Configuration
+
+### Connect Metamask to Ganache:
+
+1. Open Ganache and start a local Ethereum network (Quick Start)
+2. In Metamask, go to Settings > Networks > Add Network
+
+1. Network Name: Local Ganache
+2. New RPC URL: Use the RPC URL from Ganache (default: [http://localhost:7545](http://localhost:7545))
+3. Chain ID: 1337
+4. Currency Symbol: ETH
+
+
+
+
+
+### Import Ganache Account to Metamask:
+
+1. In Ganache, click the 🔑 icon next to an account to view its private key
+2. In Metamask, go to Import Account and paste the private key
+
+
+## 📱 Usage
+
+### Voter Dashboard
+
+- Cast votes securely via the React-based interface
+- View real-time results and audit trails
+
+
+### Admin Panel
+
+- Manage proposals and voting sessions
+- Monitor compliance alerts and AI-generated fraud reports
+
+
+### Regulator Access
+
+- Audit immutable voting records on the blockchain
+- Generate compliance reports for regulatory bodies
+
+
+## 🔍 System Architecture
+
+  ![image](https://github.com/user-attachments/assets/14272e41-5c61-415c-a89b-e829e6708d61)
+
+
+## 👥 Contributors
+
+- Patil Tejas Dinesh (2203051260006)
+- Sable Krishna Sable (2203051260042)
+- Patil Himanshu Chandrakant (2203051269002)
+- Shruti Sharma (2203051260058)
+
+
+## 🧑‍🏫 Project Guidance
+
+Guided by Mr. Gautam Singh, Assistant Professor (CSE/IT), Parul University.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+
+## 📞 Contact
+
+For questions or feedback, please open an issue in the GitHub repository.
